@@ -59,7 +59,7 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
 
       - uses: docker/build-push-action@v3
-        id: docker-build
+        id: docker-build-amd
         with:
           context: ./
           platforms: linux/amd64
